@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-filter {
+      @apply bg-purple-600/90 shadow-sm shadow-slate-500 rounded-full p-2 hover:bg-purple-700/90 focus:bg-purple-500/90 focus:border-purple-700/90 focus:border-2 cursor-pointer w-28 text-sm text-white mx-1;
+    }
+
+    .header{
+     @apply bg-purple-600/90 shadow-sm shadow-slate-500 p-5 text-2xl text-white font-bold text-center sticky top-0 left-0 right-0 z-10 ;
+    }
+    .active{
+     @apply bg-purple-500/90 border-purple-700/90 border-2;
+    }
+    .movies{
+     @apply grid lg:grid-cols-5 sm:grid-cols-1 md:grid-cols-2 gap-2 xl:mx-20 my-5 md:mx-10 mx-8 h-screen;
+    }
+}
